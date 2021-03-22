@@ -53,80 +53,82 @@ header h1 {
     margin-top: 20px;
   }
 
-  .about-me img {
+  .ihero {
     width: 100%;
     height: 175px;
-    object-fit: cover; ;
+    object-fit: cover;
+    object-position: 0px -375px;
+  }
+
+  .dev {
+    padding: 35px;
+    float:left;
+    height:300px;
+    
   }
 /* end about */
+.work {
+  clear:both;
+}
+
   p {
-      margin: 20px 30px;
+      font-size: 17px;
+      margin: 20px 35px;
       line-height: 1.5;
       max-width: 1260px;    
   }
 
   h2 {
-      margin:0 30px;
+      margin:0 35px;
       font-size: 50px;
       text-decoration: underline;
   }
 
- 
-.hero {
-  display: flex;
-  flex-direction: row;
-}
-
-.whero {
-  flex: 1;
-  margin: 30px;
-}
-
-.whero img {
-  width: 1260px;
-  height: 500px;
-  object-fit: cover;
-  ;
-
-  
-}
-
-.worktext {
-  position: absolute;
-  margin-top: -90px;
-  color:#ffffff;
-  background-color: black;
-  padding:20px;
-  width: 10%;
-  
-}
+  .relative_box {
+    position:relative;
+    float:left;
+    height: 500px;
+    margin: 0 35px 10px;
+  }
+  .relative_box img {
+    width:1260px;
+    height:500px;
+    object-fit: cover;
+  }
 
 .work-thumbnails {
+  clear: both;
   display:flex;
   flex-wrap: wrap;
-  padding-left: 20px;
+  margin-left: 25px;
   max-width: 1300px;
 
 }
 
 .item {
+position:relative;
+float:left;
+height: 300px;
+width:300px;
 margin: 10px;  
 }
 
 .item img {
-  position:relative;
   width: 300px;
   height: 300px;
   object-fit: cover;
 }
 
 .caption {
- position: absolute;
- margin-top: -90px;
- color:#ffffff;
- background-color: black;
- padding:20px;
- width: 10%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#000000d0;
+  color:#fff;
+  width:150px;
+  word-break: break-word;
+  margin:0;
+  padding: 20px;
 }
 
 .contact-me h2 {
@@ -134,8 +136,15 @@ margin: 10px;
 }
 
 .contact-me address {
-  padding: 30px;
+  padding: 35px;
 }
+
+.info {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 
 footer {
   background: #000;
@@ -147,3 +156,5 @@ footer {
   color:#ffffff
 
 }
+
+
